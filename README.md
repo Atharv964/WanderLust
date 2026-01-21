@@ -141,7 +141,7 @@ const UserSchema = new mongoose.Schema({
   password: { type: String, required: true }
 });
 
-⚡ Installation
+## ⚡ Installation
 
 1. Clone the repository
 
@@ -174,7 +174,7 @@ node app.js
 6. Open http://localhost:3000 in your browser
 
 
-🚀 Usage
+## 🚀 Usage
 
 Browse listings on the homepage
 Filter listings by category
@@ -182,23 +182,23 @@ View listing locations on an interactive map
 Signup/login to post reviews
 Add new listings by modifying init/data.js
 
-🖼 Screenshots
+## 🖼 Screenshots
 
 
-☁️ Deployment
+## ☁️ Deployment
 
 Images hosted on Cloudinary
 Database hosted on MongoDB Atlas
 Map functionality via Mapbox
 Fully deployable on platforms like Render or Heroku
 
-⚠️ Known Issues / Warnings
+## ⚠️ Known Issues / Warnings
 
 CRLF warnings on Git (Windows): Normal, harmless
 Mongoose ValidationError: Ensure geometry.type and category values are valid
 Mapbox: Requires a valid API token
 
-🤝 Contributing
+## 🤝 Contributing
 
 Fork the repo
 Create a branch: git checkout -b feature-name
