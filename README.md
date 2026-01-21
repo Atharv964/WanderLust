@@ -125,7 +125,7 @@ const ListingSchema = new mongoose.Schema({
   reviews: [{ type: mongoose.Schema.Types.ObjectId, ref: "Review" }]
 });
 
-### Review Schema
+Review Schema
 
 const ReviewSchema = new mongoose.Schema({
   rating: { type: Number, min: 1, max: 5, required: true },
@@ -133,7 +133,7 @@ const ReviewSchema = new mongoose.Schema({
   author: { type: mongoose.Schema.Types.ObjectId, ref: "User" }
 });
 
-### User Schema
+User Schema
 
 const UserSchema = new mongoose.Schema({
   email: { type: String, unique: true, required: true },
@@ -141,18 +141,18 @@ const UserSchema = new mongoose.Schema({
   password: { type: String, required: true }
 });
 
-## ⚡ Installation
+⚡ Installation
 
-1. Clone the repository
+    Clone the repository
 
 git clone https://github.com/Atharv964/wanderlust.git
 cd wanderlust
 
-2. Install dependencies
+    Install dependencies
 
 npm install
 
-3. Set up environment variables
+    Set up environment variables
 
 Create a .env file in the root directory:
 
@@ -163,45 +163,66 @@ CLOUDINARY_SECRET=your_cloudinary_secret
 MAPBOX_TOKEN=your_mapbox_token
 SECRET=session_secret_key
 
-4. Seed the database (optional)
+    Seed the database (optional)
 
 node init/index.js
 
-5. Start the server
+    Start the server
 
 node app.js
 
-6. Open http://localhost:3000 in your browser
+    Open http://localhost:3000
+    in your browser
+
+🚀 Usage
+
+    Browse listings on the homepage
+
+    Filter listings by category
+
+    View listing locations on an interactive map
+
+    Signup/login to post reviews
+
+    Add new listings by modifying init/data.js
+
+🖼 Screenshots
 
 
-## 🚀 Usage
+![Homepage](./public/images/homepage.png)
+![Map View](./public/images/map.png)
+![Listing Show Page](./public/images/showpage.png)
 
-Browse listings on the homepage
-Filter listings by category
-View listing locations on an interactive map
-Signup/login to post reviews
-Add new listings by modifying init/data.js
+☁️ Deployment
 
-## 🖼 Screenshots
+    Images hosted on Cloudinary
 
+    Database hosted on MongoDB Atlas
 
-## ☁️ Deployment
+    Map functionality via Mapbox
 
-Images hosted on Cloudinary
-Database hosted on MongoDB Atlas
-Map functionality via Mapbox
-Fully deployable on platforms like Render or Heroku
+    Fully deployable on platforms like Render or Heroku
 
-## ⚠️ Known Issues / Warnings
+⚠️ Known Issues / Warnings
 
-CRLF warnings on Git (Windows): Normal, harmless
-Mongoose ValidationError: Ensure geometry.type and category values are valid
-Mapbox: Requires a valid API token
+    CRLF warnings on Git (Windows): Normal, harmless
 
-## 🤝 Contributing
+    Mongoose ValidationError: Ensure geometry.type and category values are valid
 
-Fork the repo
-Create a branch: git checkout -b feature-name
-Make changes and commit: git commit -m "Description"
-Push: git push origin feature-name
-Open a Pull Request
+    Mapbox: Requires a valid API token
+
+🤝 Contributing
+
+    Fork the repo
+
+    Create a branch: git checkout -b feature-name
+
+    Make changes and commit: git commit -m "Description"
+
+    Push: git push origin feature-name
+
+    Open a Pull Request
+
+📄 License
+
+This project is licensed under the MIT License
