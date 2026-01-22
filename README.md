@@ -15,7 +15,7 @@ The app features category filtering, interactive maps, cloud-hosted images, revi
 4 [💾 Database Schema](#-database-schema)  
 5 [⚡ Installation](#-installation)
 6 [Dependencies](#-Dependencies)  
-7 [API Reference](#-API Reference)
+7 [API Reference](#-API-Reference)
 8 [🚀 Usage](#-usage)    
 9 [☁️ Deployment](#-deployment)  
 10 [⚠️ Known Issues / Warnings](#-known-issues--warnings)  
