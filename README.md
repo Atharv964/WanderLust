@@ -161,7 +161,7 @@ const UserSchema = new mongoose.Schema({
 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/wanderlust.git
+git clone https://github.com/Atharv964/wanderlust.git
 cd wanderlust
 ```
 
